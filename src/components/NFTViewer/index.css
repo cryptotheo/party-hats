@@ -1,5 +1,6 @@
 .grid-container {
-    height: 80vh;
+    height: 70vh;
+    flex: 1;
     margin: 0 5vw 36px 5vw;
     overflow: auto;
     display: grid;
@@ -8,11 +9,47 @@
     background-color: #12002C;
     scrollbar-width: none;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0px;
   }
 
   .grid-container::-webkit-scrollbar {
     display: none; /* This will hide the scrollbar in WebKit browsers */
+  }
+
+.nft-viewer {
+  display: flex;
+  padding: 20px;
+  width: 100vw;
+}
+
+.viewmodes {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  padding-right: 50px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.viewmodes>a{
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+}
+
+.state-control{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: row;
+}
+  .item-preview {
+    flex: none;
+    width: 400px;
+    border-right: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    height: 70vh;
   }
   
   .card-container {
@@ -39,7 +76,7 @@
   }
   
   .card-description-container{
-    background-color: rgb(55, 55, 55);
+    background-color: gray;
     border-radius: 0px 0px 8px 8px;
   }
   
@@ -72,6 +109,10 @@
     align-items: center;
   }
   
+  .preview-container {
+    padding: 40px;
+  }
+
   .dfinity-price-image{
     height: 0.8em;
     padding-left: 4px;

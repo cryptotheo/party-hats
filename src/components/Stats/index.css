@@ -1,8 +1,10 @@
 .stats-brand-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
-    height: 5vh;
+    padding: 20px 5px;
+    padding-right: 100px;
+    column-gap: 20px;
     width: auto;
 }
 
@@ -31,6 +33,7 @@
     display: flex;
     height: 5vh;
     display: flex;
+    column-gap: 30px;
     justify-content: center;
 }
 
